@@ -20,10 +20,10 @@ npm install
 ```
 Create `server/.env`:
 ```env
-PORT=5000
+PORT=5001
 MONGO_URI=mongodb://127.0.0.1:27017/blogspace
 JWT_SECRET=replace_with_a_long_random_secret
-CLIENT_URL=http://localhost:5173
+CLIENT_URL=http://localhost:5176
 ```
 If no local MongoDB is running, the backend will automatically use an in-memory MongoDB instance for local development.
 
@@ -39,13 +39,13 @@ npm install
 ```
 Create `client/.env`:
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:5001/api
 ```
 Run:
 ```bash
 npm run dev
 ```
-Open http://localhost:5173
+Open http://localhost:5176
 
 API:
 - POST /api/auth/register
